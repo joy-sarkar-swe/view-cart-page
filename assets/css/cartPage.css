@@ -1,0 +1,681 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Sans", sans-serif !important;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top_nav_section {
+  background: #15a9e3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+}
+.top_nav_section .announcement_text {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+}
+.top_nav_section .top_nav_items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top_nav_section .top_nav_items .language_btn,
+.top_nav_section .top_nav_items .money_btn,
+.top_nav_section .top_nav_items .account_btn {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 15px;
+}
+.top_nav_section .language_dropdown ul.dropdown-menu,
+.top_nav_section .money_dropdown ul.dropdown-menu {
+  background: #ffffff;
+  min-width: 0 !important;
+  width: 70px !important;
+  text-align: right;
+  padding: 5px 5px;
+  margin-top: 10px !important;
+  border: 0;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+  z-index: 15;
+}
+.top_nav_section .language_dropdown ul.dropdown-menu .dropdown-item,
+.top_nav_section .money_dropdown ul.dropdown-menu .dropdown-item {
+  padding: 0;
+  color: #184363;
+  font-weight: 600;
+  transition: all 0.5s ease-in-out;
+}
+.top_nav_section .language_dropdown ul.dropdown-menu .dropdown-item:hover,
+.top_nav_section .money_dropdown ul.dropdown-menu .dropdown-item:hover {
+  color: #15a9e3;
+}
+.top_nav_section .account_dropdown .dropdown-menu {
+  background: #ffffff;
+  min-width: 0 !important;
+  width: 240px !important;
+  height: 272px;
+  text-align: center;
+  padding: 5px 5px;
+  margin-top: 10px !important;
+  border: 0;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+  z-index: 15;
+}
+.top_nav_section .account_dropdown .dropdown-menu input {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #edf4f6;
+  outline: 0;
+  color: #56778f;
+}
+.top_nav_section .account_dropdown .dropdown-menu .account_login_btn {
+  background: #f2971f;
+  color: #ffffff;
+  border-radius: 10px;
+}
+.top_nav_section .account_dropdown .dropdown-menu h6 {
+  color: #184363;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+}
+.top_nav_section .account_dropdown .dropdown-menu a {
+  color: #184363;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+.top_nav_section .account_dropdown .dropdown-menu a:hover {
+  color: #39cb74;
+}
+
+body {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+li {
+  list-style: none;
+}
+
+nav {
+  margin-top: 20px;
+}
+nav ol li a {
+  color: rgb(148, 140, 140);
+  font-weight: 600;
+}
+nav ol li a:hover {
+  color: rgb(148, 140, 140);
+}
+
+.view_cart_message {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #edf4f6;
+  transition: 0.5s ease-in-out;
+}
+@media only screen and (min-width: 320px) and (max-width:375px) {
+  .view_cart_message {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width:425px) {
+  .view_cart_message {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width:575px) {
+  .view_cart_message {
+    flex-direction: column;
+  }
+}
+.view_cart_message button {
+  background-color: #184363;
+  padding: 8px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  font-weight: 600;
+  width: 110px;
+  border-radius: 22px;
+}
+@media only screen and (min-width: 320px) and (max-width:375px) {
+  .view_cart_message button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width:425px) {
+  .view_cart_message button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width:575px) {
+  .view_cart_message button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+.view_cart_message button a {
+  color: #fff;
+}
+.view_cart_message div {
+  color: #15a9e3;
+}
+
+.btn_size {
+  width: 150px;
+  padding: 10px 0px;
+}
+
+.promo_code_btn {
+  background: #39cb74;
+  transition: 0.5s ease-in-out;
+}
+
+.promo_code_btn:hover {
+  background: #15a9e3;
+}
+
+.update_cart_btn {
+  background: #15a9e3;
+  transition: 0.5s ease-in-out;
+}
+
+.update_cart_btn:hover {
+  background: #184363;
+}
+
+.continue_shp_btn {
+  background: #184363;
+  transition: 0.5s ease-in-out;
+}
+
+.continue_shp_btn:hover {
+  background: #15a9e3;
+}
+
+.checkout_btn {
+  background: #39cb74;
+}
+
+@media only screen and (min-width: 426px) and (max-width:575px) {
+  .first_table-data {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width:375px) {
+  .first_table-data {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width:425px) {
+  .first_table-data {
+    flex-direction: column;
+  }
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media only screen and (min-width: 426px) and (max-width:575px) {
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width:375px) {
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width:425px) {
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.couponCode {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 426px) and (max-width:575px) {
+  .couponCode {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width:375px) {
+  .couponCode {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width:425px) {
+  .couponCode {
+    flex-direction: column;
+  }
+}
+
+.couponField {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 426px) and (max-width:575px) {
+  .couponField {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width:375px) {
+  .couponField {
+    flex-direction: column;
+    align-items: center;
+  }
+  .couponField button {
+    width: 100%;
+  }
+}
+
+.newsletter_section {
+  background: url(/assets/images/background/newsletter_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 48px;
+  padding-bottom: 62px;
+  margin-top: 50px;
+}
+.newsletter_section h1 {
+  text-align: center;
+  margin-bottom: 0;
+  color: #184363;
+  font-weight: 700;
+  font-size: 36px;
+}
+.newsletter_section h4 {
+  text-align: center;
+  padding-bottom: 20px;
+  color: #184363;
+}
+@media only screen and (min-width: 376px) and (max-width:425px) {
+  .newsletter_section h4 {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width:375px) {
+  .newsletter_section h4 {
+    font-size: 12px;
+  }
+}
+.newsletter_section h6 {
+  text-align: center;
+  margin-bottom: 0;
+  color: #184363;
+}
+@media only screen and (min-width: 376px) and (max-width:425px) {
+  .newsletter_section h6 {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width:375px) {
+  .newsletter_section h6 {
+    font-size: 12px;
+  }
+}
+
+.subscribe_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (min-width: 376px) and (max-width:425px) {
+  .subscribe_section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.subscribe_section form input {
+  color: #56778f;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  padding: 5px 10px;
+  font-size: 14px;
+  outline: 0;
+  margin-top: 10px;
+  height: 36px;
+}
+@media only screen and (min-width: 376px) and (max-width:425px) {
+  .subscribe_section form input {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width:375px) {
+  .subscribe_section form input {
+    width: 100%;
+  }
+}
+
+.subscribe_section form select {
+  color: #56778f;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  padding: 5px 10px;
+  outline: 0;
+  margin-top: 10px;
+}
+@media only screen and (min-width: 376px) and (max-width:425px) {
+  .subscribe_section form select {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width:375px) {
+  .subscribe_section form select {
+    width: 100%;
+  }
+}
+
+.newsletter_submitBtn {
+  padding: 5px 10px;
+  background: #f2971f;
+  color: #ffffff;
+  border: 0;
+  outline: 0;
+  border-radius: 2px;
+  height: 36px;
+  transition: all 0.5s ease-in-out;
+}
+@media only screen and (min-width: 376px) and (max-width:425px) {
+  .newsletter_submitBtn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width:375px) {
+  .newsletter_submitBtn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+.newsletter_submitBtn:hover {
+  background: #184363;
+}
+
+.fa-paper-plane:before {
+  color: #ffffff;
+}
+
+.footer_menubar {
+  margin-top: 60px;
+}
+
+.company_info {
+  text-align: left;
+}
+@media only screen and (min-width: 576px) and (max-width:768px) {
+  .company_info {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width:425px) {
+  .company_info {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width:375px) {
+  .company_info {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+.company_info .footer_menu_logo {
+  max-width: 300px;
+  max-height: 90px;
+}
+@media only screen and (min-width: 376px) and (max-width:425px) {
+  .company_info .footer_menu_logo {
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width:375px) {
+  .company_info .footer_menu_logo {
+    margin: 0 auto;
+  }
+}
+.company_info .footer_menu_logo .footer_menu_logoImg {
+  width: 100%;
+}
+@media only screen and (min-width: 376px) and (max-width:425px) {
+  .company_info .company_address {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width:375px) {
+  .company_info .company_address {
+    text-align: center;
+  }
+}
+.company_info .company_address h6 {
+  color: #184363;
+  font-size: 14px;
+  font-weight: 400;
+}
+.company_info .company_address p {
+  color: #184363;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: 0 !important;
+}
+.company_info .company_address .fa-mobile:before {
+  color: #000;
+}
+.company_info .company_address p a {
+  text-decoration: none;
+  color: #184363;
+  transition: all 0.5s ease-in-out;
+}
+.company_info .company_address p a:hover {
+  color: #15a9e3;
+}
+.company_info .footer_socialmedia {
+  padding-top: 15px;
+}
+.company_info .footer_socialmedia a i.fa-facebook-f:before,
+.company_info .footer_socialmedia a i.fa-instagram:before,
+.company_info .footer_socialmedia a i.fa-whatsapp:before,
+.company_info .footer_socialmedia a i.fa-twitter:before,
+.company_info .footer_socialmedia a i.fa-youtube:before {
+  color: #15a9e3;
+  font-size: 22px;
+  cursor: pointer;
+  padding-right: 5px;
+}
+
+.category_list {
+  text-align: left;
+}
+@media only screen and (min-width: 576px) and (max-width:768px) {
+  .category_list {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width:425px) {
+  .category_list {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width:375px) {
+  .category_list {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+.category_list h6 {
+  color: #15a9e3;
+  padding-left: 32px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.category_list ul li a {
+  text-decoration: none;
+  color: #184363;
+  transition: all 0.5s ease-in-out;
+}
+.category_list ul li a:hover {
+  color: #15a9e3;
+}
+
+.ourComany_list {
+  text-align: left;
+}
+@media only screen and (min-width: 576px) and (max-width:768px) {
+  .ourComany_list {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width:425px) {
+  .ourComany_list {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width:375px) {
+  .ourComany_list {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+.ourComany_list h6 {
+  color: #15a9e3;
+  padding-left: 32px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.ourComany_list ul li a {
+  text-decoration: none;
+  color: #184363;
+  transition: all 0.5s ease-in-out;
+}
+.ourComany_list ul li a:hover {
+  color: #15a9e3;
+}
+
+.help_info_list {
+  text-align: left;
+}
+@media only screen and (min-width: 576px) and (max-width:768px) {
+  .help_info_list {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width:425px) {
+  .help_info_list {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width:375px) {
+  .help_info_list {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+.help_info_list h6 {
+  color: #15a9e3;
+  padding-left: 32px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.help_info_list ul li a {
+  text-decoration: none;
+  color: #184363;
+  transition: all 0.5s ease-in-out;
+}
+.help_info_list ul li a:hover {
+  color: #15a9e3;
+}
+
+.copyright-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+@media only screen and (min-width: 376px) and (max-width:425px) {
+  .copyright-section {
+    flex-direction: column;
+    padding: 20px 0;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width:375px) {
+  .copyright-section {
+    flex-direction: column;
+    padding: 20px 0;
+    text-align: center;
+  }
+}
+.copyright-section .copyright_text h5 {
+  color: #56778f;
+  font-size: 14px;
+  font-weight: 400;
+}
+.copyright-section .creditCard_image {
+  max-width: 300px;
+  max-height: 39px;
+  cursor: pointer;
+}
+@media only screen and (min-width: 376px) and (max-width:425px) {
+  .copyright-section .creditCard_image {
+    padding: 20px 0;
+  }
+}
+.copyright-section .creditCard_image .creditCard_img {
+  width: 100%;
+}

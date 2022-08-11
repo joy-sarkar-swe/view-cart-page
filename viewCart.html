@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <!-- css file -->
+    <link rel="stylesheet" href="./assets/css/cartPage.css">
+    <!-----google font link------>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-----custom icons---->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+
+    <!-- another google font icon link -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+
+    <!-- Bootstrap CDN  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+
+    <!------script js------>
+    <script src="./assets/js/cart.js" defer></script>
+</head>
+<body>
+    <!-- Header Start -->
+  <header>
+    <div class="top_nav_section container-fluid">
+
+        <!-----Announcement Text----->
+        <div class="announcement_text">
+            <span>Due to the COVID 19 epidemic, orders may be processed with a slight delay</span>
+        </div>
+
+
+        <div class="top_nav_items">
+            <!-----Language Dropdown----->
+            <div class="language_dropdown">
+                <div class="dropdown-center">
+                    <button class="language_btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        EN
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">EN</a></li>
+                        <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                        <li><a class="dropdown-item" href="#">Français</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-----Money Dropdown----->
+            <div class="money_dropdown">
+                <div class="dropdown-center">
+                    <button class="money_btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        $ USD
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"> $ USD</a></li>
+                        <li><a class="dropdown-item" href="#"> $ EUR</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-----Account Dropdown----->
+            <div class="account_dropdown">
+                <div class="dropdown-center">
+                    <button class="account_btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fas fa-user"></i> My Account
+                    </button>
+                    <div class="dropdown-menu">
+
+                        <input type="text" name="username" id="" placeholder="Username">
+                        <br>
+                        <input type="password" name="password" id="" placeholder="Password">
+                        <br>
+                        <input class="account_login_btn" type="submit" value="Log in">
+
+                        <h6><a href="">Forgot password?</a></h6>
+                        <h6>Don't have account yet? <a href="">Register here</a></h6>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+  </header>
+    <!-- Header End -->
+
+    <!-- Main Section Start -->
+    <main class="container">
+
+      <!-- breadcrumb start -->
+      <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            <a href="#">Shop</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            <a href="#">Cart</a>
+          </li>
+        </ol>
+      </nav>
+      <!-- breadcrumb end -->
+
+      <!-- Main cart list and checkout Section Start -->
+      <div class="row">
+            <div class="col-lg-8 p-3 bg-white rounded shadow-sm mb-5">
+              <div class="view_cart_message d-none d-flex align-items-center mb-3">
+                <div class="me-3">"Vitamin D3 (1000 IU) Cap X" removed.</div>
+                <button><a href="#">Undo?</a></button>
+              </div>
+              <div class="table-responsive">
+                <!-- Shopping cart table start -->
+                <table class="table">
+                  <!-- table head start -->
+                  <thead>
+                    <tr>
+                      <th scope="col" class="border-0 bg-light">
+                        <div class="p-2 px-3 text-uppercase">Product</div>
+                      </th>
+                      <th scope="col" class="border-0 bg-light text-center">
+                        <div class="py-2 text-uppercase">Price</div>
+                      </th>
+                      <th scope="col" class="border-0 bg-light text-center" style="width: 150px;">
+                        <div class="py-2 text-uppercase">Quantity</div>
+                      </th>
+                      <th scope="col" class="border-0 bg-light text-center">
+                        <div class="py-2 text-uppercase">Remove</div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <!-- table head end -->
+
+                  <!-- table body start -->
+                  <tbody>
+                    <tr class="border-bottom">
+                      <td scope="row" class="border-0">
+                        <div class="p-2 d-flex justify-content-between align-items-center first_table-data">
+                          <img src="./assets/images/products/product53-300x300.jpg" alt="" width="70" class="img-fluid rounded shadow-sm me-2">
+                          <div class="ml-3 d-inline-block align-middle">
+                            <p class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Protein Supplies Australia Colostrum Pure</a></p>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="border-0 align-middle text-center"><strong>$79.00</strong></td>
+                      <td class="border-0 align-middle text-center"><strong><input type="number" name="quantity" id="" value="1" class="text-center w-50 border rounded"></strong></td>
+                      <td class="border-0 align-middle text-center"><a href="#" class="text-dark" id="remove_product"><i class="fa fa-trash"></i></a></td>
+                    </tr>
+                  </tbody> 
+                  <!-- table body end -->
+                </table>
+                <!-- Shopping cart table end -->
+                <!-- Pagination of cart items start-->
+                <div class="pagination">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end">
+                      <li class="page-item disabled">
+                        <a class="page-link fw-bold" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                      </li>
+                      <li class="page-item"><a class="page-link fw-bold text-primary" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link fw-bold text-primary" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link fw-bold text-primary" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link fw-bold text-primary" href="#">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <!-- Pagination of cart items end-->
+              </div>
+              <!-- coupon code and update cart section start here -->
+              <div class="couponCode updateBtn">
+                <div class="couponField">
+                  <input class="border-0 rounded p-2" style="background-color: #edf4f6;" type="text" name="coupon_code" placeholder=" Apply promo code" id="">
+                  <button class="btn_size promo_code_btn border-0 rounded fw-bold text-white m-2">Apply promo code</button>
+                </div>
+                <button class="btn_size update_cart_btn border-0 rounded fw-bold text-white">Update Cart</button>
+              </div>
+              <!-- coupon code section end here -->
+          </div> 
+            <!-- coupon code and update cart here -->
+            <div class="col-lg-4 bg-white rounded pt-3">
+              <!-- main order summary starts here -->
+              <div class="bg-light px-4 py-3 text-uppercase fw-bold">Order summary </div>
+              <div class="p-4">
+                <ul class="list-unstyled mb-4">
+                  <li class="d-flex justify-content-between py-1 border-bottom"><strong class="text-muted">Subtotal</strong><strong>$79.00</strong></li>
+                  <li class="d-flex justify-content-between py-1 border-bottom"><strong class="text-muted">Shipping</strong><strong>$10.00</strong></li>
+                  <li class="d-flex justify-content-between py-1 border-bottom"><strong class="text-muted">Tax</strong><strong>$0.00</strong></li>
+                  <li class="d-flex justify-content-between py-1 border-bottom"><strong class="text-muted">Total</strong>
+                    <h5 class="font-weight-bold">$89.00</h5>
+                  </li>
+                </ul>
+                <!-- main order summary end here -->
+                <div class="mb-2 row">
+                  <button class="btn_size border-0 rounded fw-bold text-white mb-2 checkout_btn">Proceed to checkout
+                  </button>
+                <button class="btn_size border-0 rounded fw-bold text-white continue_shp_btn mb-3">Continue shopping</button>
+                </div>
+                <!-- Helpline number -->
+                <div>
+                  <div class="secure d-flex align-items-center">
+                    <i class="fas fa-lock text-center fs-1 me-3"></i>
+                    <div>
+                      <span class="fw-bold text-secondary">Secure Shopping</span>
+                      <p class="text-secondary">No worries - all transactions are safe and secure</p>
+                    </div>
+                  </div>
+                  <div class="helpNumber d-flex align-items-center ">
+                    <i class="fas fa-phone text-center fs-1 me-3">
+                    </i>
+                    <div>
+                      <span class="fw-bold text-secondary">We're Here to Help</span>
+                      <p class="text-secondary">Call us anytime at (626-423-2660, 914-928-8286)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        <!-- checkout section start here -->         
+      </div>      
+    </main>
+    <!-- Main Section End -->
+    <!-----Footer Start--->
+  <footer>
+    <!-----Newsletter Section Start------>
+    <div class="newsletter_section container-fluid">
+      <h1>Subscribe</h1>
+      <h4>$15 OFF on your first order of $199 or more</h4>
+
+      <h6>Sign up for our Email Newsletter</h6>
+
+      <div class="subscribe_section">
+        <form action="" method="">
+          <input type="email" name="" id="" placeholder="Type email..." />
+          <select name="" id="">
+            <option value="type of business">Type Of Business</option>
+            <option value="auction">Auction</option>
+            <option value="automotive Other">Automotive Other</option>
+            <option value="autobody">Autoboy</option>
+            <option value="distributer">Distributer</option>
+            <option value="mechanical">Mechanical</option>
+            <option value="new car (1-4 location)">
+              New Car (1-4 Location)
+            </option>
+            <option value="new car (5 + locations)">
+              New Car (5 + Locations)
+            </option>
+            <option value="rv/motor home dealer">Rv/Motor Home Dealer</option>
+            <option value="service/ repair facility">
+              Service/ Repair Facility
+            </option>
+            <option value="tire dealer">Tire Dealer</option>
+            <option value="used car (1-4 location)">
+              Used Car (1-4 Location)
+            </option>
+            <option value="used car (5+ location)">
+              Used Car (5+ Location)
+            </option>
+            <option value="other">Other</option>
+          </select>
+
+          <button class="newsletter_submitBtn">
+            <i class="fas fa-paper-plane"></i> Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-----Newsletter Section End------>
+
+    <!-----Footer Menubar Section Start------>
+    <div class="footer_menubar container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 company_info">
+          <div class="footer_menu_logo">
+            <img
+              class="footer_menu_logoImg"
+              src="./assets/images/logo/logo.png"
+              alt=""
+            />
+          </div>
+
+          <div class="company_address">
+            <h6 class="pt-4">2543 Millennium Drive</h6>
+            <h6>Elgin, IL 60124</h6>
+
+            <p>Cell</p>
+            <h6><i class="fas fa-mobile"></i> 626-423-2660</h6>
+            <h6><i class="fas fa-mobile"></i> 914-928-8286</h6>
+
+            <p>Email: <a href="#">MarketingDoor2DoorLLC@gmail.com</a></p>
+          </div>
+
+          <div class="footer_socialmedia">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-whatsapp"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 category_list">
+          <h6>Shop by Category</h6>
+
+          <ul>
+            <li class="footerMenu_title">
+              <a href="#">Advertising & Sales</a>
+            </li>
+            <li><a href="#">Apparel</a></li>
+            <li><a href="#">Detailling Supplies</a></li>
+            <li><a href="#">Envelops & Forms</a></li>
+            <li><a href="#">Flags</a></li>
+            <li><a href="#">Key Tags</a></li>
+            <li><a href="#">Key Storage</a></li>
+            <li><a href="#">License Plate Accessories</a></li>
+            <li><a href="#">Personalized Products</a></li>
+            <li><a href="#">Safety & Personal Protection</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Windshield Marketing</a></li>
+            <li><a href="#">Sale</a></li>
+            <li><a href="#">Seasonal</a></li>
+            <li><a href="#">Shop Supplies</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 ourComany_list">
+          <h6>Our Company</h6>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Catalog Request</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Terms &Condition</a></li>
+            <li><a href="#">Site Map</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 help_info_list">
+          <h6>Help & Info</h6>
+          <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">ADA Compliance</a></li>
+            <li><a href="#">Online Catalog</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-----Footer Menubar Section End------>
+
+    <hr class="container" />
+
+    <!-----Footer Copyright Section Start---->
+    <div class="container copyright-section">
+      <div class="copyright_text">
+        <h5>Copyright © 2022 Marketing Door2Door</h5>
+      </div>
+
+      <div class="creditCard_image">
+        <img
+          class="creditCard_img"
+          src="./assets/images/cedit_card/credit_cardlogos.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-----Footer Copyright Section End---->
+  </footer>
+  <!-----Footer End----->
+    
+</body>
+</html>
